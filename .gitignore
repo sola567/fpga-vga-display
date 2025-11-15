@@ -1,0 +1,207 @@
+# ============================================================================
+# .gitignore for FPGA Projects (Xilinx Vivado)
+# ============================================================================
+# Place this file in the root of your repository
+# It tells Git which files to ignore (not track)
+
+# ============================================================================
+# Vivado Project Files (DO NOT COMMIT)
+# ============================================================================
+
+# Project files - these are generated and can be recreated
+*.xpr
+*.xpfm
+
+# Cache and temporary files
+*.cache/
+*.Xil/
+.Xil/
+
+# Hardware files
+*.hw/
+*.hwdef
+
+# IP user files
+*.ip_user_files/
+
+# Synthesis and implementation runs
+*.runs/
+*.gen/
+
+# Simulation files
+*.sim/
+*.protoinst
+*.wdb
+*.wcfg
+
+# IP files (optional - uncomment if you want to track IP)
+# *.ip_user_files/
+# *.gen/
+
+# Log files
+*.log
+*.jou
+*.debug
+*.rpt
+*.dcp
+
+# ============================================================================
+# Vivado Generated Directories
+# ============================================================================
+
+# Project directories (generated)
+/.cache/
+/.Xil/
+/.gen/
+/.ip_user_files/
+/.hw/
+/.runs/
+/.sim/
+
+# Backup files
+*.backup.*
+*.bak
+
+# ============================================================================
+# What TO KEEP (Source Files) - DO NOT ADD THESE TO .gitignore!
+# ============================================================================
+# These are your actual project files that SHOULD be tracked:
+# 
+# !*.sv          - SystemVerilog source files
+# !*.v           - Verilog source files  
+# !*.vhd         - VHDL source files
+# !*.xdc         - Constraints files
+# !*.tcl         - TCL scripts
+# !*.mem         - Memory initialization files
+# !*.coe         - Coefficient files
+# !*.py          - Python scripts
+# !*.md          - Markdown documentation
+# !*.png, !*.jpg - Images and diagrams
+#
+# Note: The ! means "do NOT ignore this"
+
+# ============================================================================
+# Build Outputs (Optional - Decide if you want to track these)
+# ============================================================================
+
+# Bitstream files (large, can be regenerated)
+*.bit
+*.bin
+*.mcs
+*.ltx
+
+# If you DO want to include bitstreams for distribution:
+# !release/*.bit
+# !release/*.bin
+
+# ============================================================================
+# Operating System Files
+# ============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+
+# ============================================================================
+# IDE and Editor Files
+# ============================================================================
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Eclipse
+.project
+.cproject
+.settings/
+
+# ============================================================================
+# Python (if using scripts)
+# ============================================================================
+
+# Byte-compiled / optimized
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# ============================================================================
+# Documentation Build Files
+# ============================================================================
+
+# Sphinx documentation
+docs/_build/
+docs/_static/
+docs/_templates/
+
+# LaTeX
+*.aux
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.toc
+
+# ============================================================================
+# Miscellaneous
+# ============================================================================
+
+# Compressed files (unless intentional)
+*.zip
+*.tar.gz
+*.rar
+
+# Temporary files
+*.tmp
+*.temp
+
+# ============================================================================
+# Project-Specific (Add Your Own)
+# ============================================================================
+
+# Add any project-specific files to ignore here
+# Example:
+# /experimental/
+# /old_versions/
+# /notes_to_self.txt
+
+# ============================================================================
+# IMPORTANT REMINDERS:
+# ============================================================================
+# 
+# 1. This .gitignore assumes you're NOT tracking the entire Vivado project
+# 2. To recreate the project, you'll need a TCL script or manual setup
+# 3. Always track: source files (.sv/.v/.vhd), constraints (.xdc), scripts
+# 4. Never track: generated files, logs, cache, build outputs
+# 5. Test with: git status (should show only source files as untracked)
+#
+# ============================================================================
