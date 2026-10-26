@@ -1,7 +1,7 @@
  // Simple VGA Pattern Generator
 
  // Description: Single-file VGA controller displaying test patterns
- //Author: [Your Name]
+ //Author: Clarence Blay
  //Date: January 2025
  //Target: Xilinx Artix-7 (Basys 3 / Nexys A7)
  //
